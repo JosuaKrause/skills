@@ -19,6 +19,7 @@ A skill is a directory containing a `SKILL.md` file. Claude reads the frontmatte
 | [`git-aliases-setup`](git-aliases-setup/SKILL.md) | Configure standard global git aliases |
 | [`statusline-setup`](statusline-setup/SKILL.md) | Set up the Claude Code statusline (model, branch, context bar) |
 | [`new-aks-app`](new-aks-app/SKILL.md) | Scaffold a new FastAPI + React/TypeScript app (or add AKS deployment, Redis, or persistent storage to an existing one) on the shared lingolou-aks cluster; includes ready-to-copy templates |
+| [`sync-skill`](sync-skill/SKILL.md) | Copy a skill between this repo and `~/.claude/skills/` (install or save back) |
 
 ## Installation
 
