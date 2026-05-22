@@ -4,11 +4,12 @@ A collection of reusable [Claude Code](https://claude.ai/code) skills — instru
 
 ## What is a skill?
 
-A skill is a directory containing a `SKILL.md` file. Claude reads the frontmatter `description` to decide when to invoke the skill, and follows the body to execute it.
+A skill is a directory containing a `SKILL.md` file. Claude reads the frontmatter `description` to decide when to invoke the skill, and follows the body to execute it. Skills may also include a `templates/` directory with ready-to-copy files that the skill references.
 
 ```
 <skill-name>/
   SKILL.md
+  templates/   ← optional: files the skill copies into a target repo
 ```
 
 ## Skills in this repo
@@ -17,7 +18,7 @@ A skill is a directory containing a `SKILL.md` file. Claude reads the frontmatte
 |---|---|
 | [`git-aliases-setup`](git-aliases-setup/SKILL.md) | Configure standard global git aliases |
 | [`statusline-setup`](statusline-setup/SKILL.md) | Set up the Claude Code statusline (model, branch, context bar) |
-| [`new-aks-app`](new-aks-app/SKILL.md) | Scaffold a new TypeScript or Python app and deploy it to the Lingolou AKS cluster |
+| [`new-aks-app`](new-aks-app/SKILL.md) | Scaffold a new FastAPI + React/TypeScript app (or add AKS deployment, Redis, or persistent storage to an existing one) on the shared lingolou-aks cluster; includes ready-to-copy templates |
 
 ## Installation
 
